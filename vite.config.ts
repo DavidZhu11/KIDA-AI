@@ -21,12 +21,7 @@ export default defineConfig(({ mode }) => {
       },
       build: {
         // Optimize for SEO and performance
-        minify: 'terser',
-        terserOptions: {
-          compress: {
-            drop_console: true,
-          },
-        },
+        minify: 'esbuild',
         rollupOptions: {
           output: {
             manualChunks: {
