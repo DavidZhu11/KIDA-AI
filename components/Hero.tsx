@@ -4,7 +4,7 @@ import { Button } from './ui/Button';
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden" aria-label="Hero section">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,#050505_100%)] z-10 pointer-events-none"></div>
       

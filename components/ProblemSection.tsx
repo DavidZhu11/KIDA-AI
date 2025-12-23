@@ -22,13 +22,13 @@ const problems = [
 
 export const ProblemSection: React.FC = () => {
   return (
-    <section className="relative py-32 overflow-hidden">
+    <section id="problem" className="relative py-32 overflow-hidden" aria-labelledby="problem-heading">
         {/* Background blobs */}
        <div className="absolute top-1/2 -left-10 w-96 h-96 bg-primary/5 rounded-full mix-blend-screen filter blur-[100px] animate-blob"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6">
+          <h2 id="problem-heading" className="text-3xl md:text-5xl font-display font-bold text-white mb-6">
             The Status Quo is <span className="gold-text-gradient">Broken</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto font-light leading-relaxed">

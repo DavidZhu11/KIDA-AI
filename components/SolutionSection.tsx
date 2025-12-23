@@ -4,12 +4,12 @@ import { History, Sparkles, XCircle, CheckCircle2 } from 'lucide-react';
 
 export const SolutionSection: React.FC = () => {
   return (
-    <section id="solution" className="relative py-32 border-t border-white/5 overflow-hidden">
+    <section id="solution" className="relative py-32 border-t border-white/5 overflow-hidden" aria-labelledby="solution-heading">
       <div className="absolute top-1/3 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full mix-blend-screen filter blur-[120px] animate-blob"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6">
+          <h2 id="solution-heading" className="text-3xl md:text-5xl font-display font-bold text-white mb-6">
             The New Standard of <span className="gold-text-gradient">Outreach</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto font-light">

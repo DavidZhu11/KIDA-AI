@@ -18,6 +18,24 @@ export default defineConfig(({ mode }) => {
         alias: {
           '@': path.resolve(__dirname, '.'),
         }
-      }
+      },
+      build: {
+        // Optimize for SEO and performance
+        minify: 'terser',
+        terserOptions: {
+          compress: {
+            drop_console: true,
+          },
+        },
+        rollupOptions: {
+          output: {
+            manualChunks: {
+              vendor: ['react', 'react-dom'],
+            },
+          },
+        },
+      },
+      // Ensure public folder files are properly served
+      publicDir: 'public',
     };
 });

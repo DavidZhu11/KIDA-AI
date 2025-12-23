@@ -29,7 +29,7 @@ export const Header: React.FC = () => {
   };
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-background-dark/90 backdrop-blur-md shadow-lg shadow-black/20 py-3' : 'bg-transparent py-5'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-background-dark/90 backdrop-blur-md shadow-lg shadow-black/20 py-3' : 'bg-transparent py-5'}`} aria-label="Main navigation">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-2 group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
@@ -40,13 +40,14 @@ export const Header: React.FC = () => {
             />
           </div>
 
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8" role="navigation" aria-label="Primary navigation">
             {navItems.map((item) => (
-              <a 
-                key={item.name} 
-                href={`#${item.id}`} 
+              <a
+                key={item.name}
+                href={`#${item.id}`}
                 onClick={(e) => scrollToSection(e, item.id)}
                 className="text-sm font-medium text-gray-400 hover:text-white transition-colors relative group"
+                aria-label={`Navigate to ${item.name} section`}
               >
                 {item.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>

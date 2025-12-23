@@ -46,32 +46,41 @@ export const FAQSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-4" itemScope itemType="https://schema.org/FAQPage">
           {faqs.map((faq, index) => (
-            <div 
-              key={index} 
+            <article
+              key={index}
               className={`group border border-white/5 rounded-2xl bg-white/[0.02] overflow-hidden transition-all duration-300 hover:border-primary/20 hover:bg-white/[0.03] ${openIndex === index ? 'border-primary/20 bg-white/[0.04]' : ''}`}
+              itemScope
+              itemProp="mainEntity"
+              itemType="https://schema.org/Question"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="w-full flex items-center justify-between p-6 text-left focus:outline-none"
+                aria-expanded={openIndex === index}
+                aria-controls={`faq-answer-${index}`}
               >
-                <span className={`text-lg font-medium transition-colors duration-300 ${openIndex === index ? 'text-primary' : 'text-white group-hover:text-primary/80'}`}>
+                <span className={`text-lg font-medium transition-colors duration-300 ${openIndex === index ? 'text-primary' : 'text-white group-hover:text-primary/80'}`} itemProp="name">
                   {faq.question}
                 </span>
                 <span className={`ml-4 flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full border border-white/10 transition-all duration-300 ${openIndex === index ? 'bg-primary text-black rotate-180' : 'bg-transparent text-gray-400 group-hover:border-primary/50 group-hover:text-primary'}`}>
                   {openIndex === index ? <Minus size={16} /> : <Plus size={16} />}
                 </span>
               </button>
-              
-              <div 
+
+              <div
+                id={`faq-answer-${index}`}
                 className={`transition-all duration-300 ease-in-out overflow-hidden ${openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
+                itemScope
+                itemProp="acceptedAnswer"
+                itemType="https://schema.org/Answer"
               >
-                <div className="p-6 pt-0 text-gray-400 leading-relaxed border-t border-transparent">
+                <div className="p-6 pt-0 text-gray-400 leading-relaxed border-t border-transparent" itemProp="text">
                   {faq.answer}
                 </div>
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>

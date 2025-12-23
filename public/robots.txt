@@ -1,0 +1,24 @@
+# robots.txt for www.kidaai.com
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Sitemap location
+Sitemap: https://www.kidaai.com/sitemap.xml
+
+# Crawl-delay (optional, in seconds)
+Crawl-delay: 1
+
+# Google-specific rules
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+# Bing-specific rules
+User-agent: Bingbot
+Allow: /

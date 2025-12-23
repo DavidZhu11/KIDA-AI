@@ -19,7 +19,7 @@ const replies = [
 
 export const ProofSection: React.FC = () => {
   return (
-    <section className="relative py-24 border-b border-white/5 overflow-hidden">
+    <section id="results" className="relative py-24 border-b border-white/5 overflow-hidden" aria-labelledby="proof-heading">
       {/* Background Decor */}
       <div className="absolute right-0 top-0 w-[300px] h-[300px] bg-gold-dark/10 rounded-full mix-blend-screen filter blur-[80px] opacity-20"></div>
 
@@ -29,7 +29,7 @@ export const ProofSection: React.FC = () => {
             <CheckCheck size={14} />
             <span>Human-Level Quality</span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6">
+          <h2 id="proof-heading" className="text-3xl md:text-5xl font-display font-bold text-white mb-6">
             Responses that we <span className="gold-text-gradient">usually get</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto font-light">

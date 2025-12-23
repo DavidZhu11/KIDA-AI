@@ -179,10 +179,10 @@ export const ProcessSection: React.FC = () => {
   }, []);
 
   return (
-    <section id="process" className="relative py-32 overflow-hidden min-h-[1200px]">
+    <section id="process" className="relative py-32 overflow-hidden min-h-[1200px]" aria-labelledby="process-heading">
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 relative z-20">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
+          <h2 id="process-heading" className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
             From Data Signal to <span className="gold-text-gradient">Booked Call</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto font-light">
