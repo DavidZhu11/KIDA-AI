@@ -54,7 +54,7 @@ export const Hero: React.FC = () => {
 
         {/* Subheadline */}
         <p className="mt-4 max-w-2xl text-lg md:text-xl text-gray-400 leading-relaxed font-light mb-10">
-          Same deliverables. Completely different offer. Now there's no one to compare you to.
+          Don't reinvent your service. Reinvent the offer. Turn a commodity into a monopoly.
         </p>
 
         {/* CTAs */}
