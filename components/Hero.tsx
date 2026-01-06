@@ -63,7 +63,7 @@ export const Hero: React.FC = () => {
             variant="primary"
             icon={<ArrowRight size={18} />}
             className="w-full sm:w-auto"
-            href="https://cal.com/david-zhu/cold-email-systems-audit"
+            href="https://cal.com/david-zhu/the-market-of-one-strategy-session"
             target="_blank"
             rel="noopener noreferrer"
           >
