@@ -1,42 +1,42 @@
 import React from 'react';
+import { Users, Mail, RefreshCcw, Clock } from 'lucide-react';
 import { SpotlightCard } from './ui/SpotlightCard';
-import { TrendingDown, Activity, Ban } from 'lucide-react';
 
 const problems = [
   {
-    title: "The Lead Rollercoaster",
-    description: "One month of frantic closing followed by two months of 'dry spells' because you stopped prospecting.",
-    icon: TrendingDown,
+    title: "\"My offer sounds like everyone else's.\"",
+    description: "On sales calls, you're compared to 3 other agencies. You know you're better, but they don't see it. So you compete on price. And lose.",
+    icon: Users,
   },
   {
-    title: "The Signal Noise",
-    description: "Burning your sales team's time on calls with 'prospects' who lack the budget or the authority.",
-    icon: Activity,
+    title: "\"I'm stuck on the referral rollercoaster.\"",
+    description: "Great months followed by dry spells. You know you need a predictable pipeline, but nothing seems to stick.",
+    icon: RefreshCcw,
   },
   {
-    title: "The Deliverability Trap",
-    description: "Sending to your whole lead list only to realize your domain has been blacklisted for weeks.",
-    icon: Ban,
+    title: "\"Cold outreach doesn't work for me.\"",
+    description: "You've tried it. Generic templates, bought lists, maybe even an agency. The result? Crickets. Or worse, spam complaints.",
+    icon: Mail,
   },
 ];
 
 export const ProblemSection: React.FC = () => {
   return (
-    <section id="problem" className="relative py-32 overflow-hidden" aria-labelledby="problem-heading">
-        {/* Background blobs */}
-       <div className="absolute top-1/2 -left-10 w-96 h-96 bg-primary/5 rounded-full mix-blend-screen filter blur-[100px] animate-blob"></div>
+    <section className="relative py-32 overflow-hidden">
+      {/* Background blobs */}
+      <div className="absolute top-1/2 -left-10 w-96 h-96 bg-primary/5 rounded-full mix-blend-screen filter blur-[100px] animate-blob"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <h2 id="problem-heading" className="text-3xl md:text-5xl font-display font-bold text-white mb-6">
-            The Status Quo is <span className="gold-text-gradient">Broken</span>
+          <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6">
+            Sound <span className="gold-text-gradient">Familiar?</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto font-light leading-relaxed">
-            Outdated strategies are costing you revenue. It's time to face the reality of modern prospecting.
+            If you're a B2B service provider struggling to differentiate, you're not alone.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {problems.map((item, index) => (
             <SpotlightCard key={index} className="group p-8 h-full">
               <div className="w-14 h-14 bg-white/5 rounded-xl flex items-center justify-center mb-8 border border-white/5 group-hover:border-primary/20 group-hover:bg-primary/10 transition-all duration-300">

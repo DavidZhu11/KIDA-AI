@@ -33,32 +33,28 @@ export const Hero: React.FC = () => {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
           </span>
-          <span className="text-sm font-medium text-gray-300 group-hover:text-white transition-colors">For High Ticket B2B Service Businesses</span>
+          <span className="text-sm font-medium text-gray-300 group-hover:text-white transition-colors">The 30-Day Offer Testing Sprint</span>
           <Sparkles className="text-primary w-3.5 h-3.5" />
         </div>
 
         {/* Headline */}
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold tracking-tight text-white leading-[1.1] mb-8 drop-shadow-2xl">
-          Stop Competing on{' '}
+          Stop Competing on Price. <br className="hidden md:block" />
+          <span className="gold-text-gradient italic">Start Being</span>
+          <br className="hidden md:block" />
           <span className="relative inline-block group">
-            <span className="text-gray-500 line-through decoration-gray-600 decoration-2 transition-all duration-300 group-hover:text-gray-400">Price</span>
-          </span>
-          . <br className="hidden md:block" />
-          Start Being{' '}
-          <span className="relative inline-block group">
-            <span className="gold-text-gradient italic relative z-10 transition-all duration-500 group-hover:brightness-125">The Only Option</span>
+            <span className="gold-text-gradient italic relative z-10 transition-all duration-500 group-hover:brightness-125">The Only Option.</span>
             {/* Underline decoration */}
             <svg className="absolute w-[110%] h-3 -bottom-2 -left-[5%] text-primary opacity-60 z-0 transition-opacity duration-300 group-hover:opacity-100" viewBox="0 0 200 9" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M2.00025 6.99997C25.7201 5.20232 94.6295 -2.46369 198.003 2.49997" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
             </svg>
             <div className="absolute inset-0 bg-primary/20 blur-xl -z-10 transform scale-110 opacity-50 group-hover:opacity-80 transition-opacity duration-500"></div>
           </span>
-          .
         </h1>
 
         {/* Subheadline */}
         <p className="mt-4 max-w-2xl text-lg md:text-xl text-gray-400 leading-relaxed font-light mb-10">
-          Same service. Different positioning. Suddenly, you're not competing. You're the only option.
+          Same deliverables. Completely different offer. Now there's no one to compare you to.
         </p>
 
         {/* CTAs */}
@@ -71,7 +67,7 @@ export const Hero: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Free Systems Audit
+            Book Your Strategy Call
           </Button>
         </div>
       </div>

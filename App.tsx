@@ -3,8 +3,8 @@ import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { ProblemSection } from './components/ProblemSection';
 import { SolutionSection } from './components/SolutionSection';
-import { ProofSection } from './components/ProofSection';
 import { ProcessSection } from './components/ProcessSection';
+import { OriginStorySection } from './components/OriginStorySection';
 import { TestimonialsSection } from './components/TestimonialsSection';
 import { FAQSection } from './components/FAQSection';
 import { CTASection } from './components/CTASection';
@@ -20,8 +20,8 @@ function App() {
         <Hero />
         <ProblemSection />
         <SolutionSection />
-        <ProofSection />
         <ProcessSection />
+        <OriginStorySection />
         <TestimonialsSection />
         <FAQSection />
         <CTASection />
