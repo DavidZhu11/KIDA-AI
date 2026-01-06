@@ -60,7 +60,7 @@ export const Header: React.FC = () => {
               variant="primary"
               className="!px-6 !py-2 text-sm"
               icon={<PhoneCall size={16} />}
-              href="https://cal.com/david-zhu/the-market-of-one-strategy-session"
+              href="https://cal.com/troy-meadows/the-market-of-one-strategy-session?overlayCalendar=true"
               target="_blank"
               rel="noopener noreferrer"
             >
