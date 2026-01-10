@@ -17,7 +17,7 @@ const testimonials = [
     highlight: "High-Impact Outreach"
   },
   {
-    name: "Domenic Werner",
+    name: "Domenic Werners",
     role: "Founder",
     quote: "Expert in AI automation and bringing clarity to technical setups.",
     highlight: "Automation Expert"
