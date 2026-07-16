@@ -3,28 +3,28 @@ import { ChevronDown } from 'lucide-react';
 
 const faqs = [
   {
-    question: "\"I've tried cold email before. It didn't work.\"",
-    answer: "That's because you were selling the same thing as everyone else. We don't just fix your emails. We fix your offer. That's the difference between being ignored and being the only option."
+    question: "Do I have to pay for the brand list?",
+    answer: "No. The list of 20 brands is completely free. We build it for you after a 15-minute call where we learn about your agency, your services, and the kind of brands you want to work with. No cost, no commitment."
   },
   {
-    question: "\"I don't have time for this.\"",
-    answer: "You do one 60-minute strategy call. We handle everything else: research, copy, infrastructure, sending, iteration. Your job is to show up to the meetings we book."
+    question: "How do you find the brands?",
+    answer: "We use AI-powered research combined with human verification. We look for brands actively scaling content — launching new campaigns, hiring creators, ramping up social, or expanding into new channels. Then we match them to your specific services and price range."
   },
   {
-    question: "\"What if it doesn't work?\"",
-    answer: "We keep going until you close a deal. That's the guarantee. No arbitrary timelines. No \"sorry, your 30 days are up.\""
+    question: "I've tried cold outreach before and it didn't work.",
+    answer: "That's because most outreach is generic templates sent to random lists. We research each brand individually and write outreach based on what they're actually doing right now. It reads like a real person who did their homework — because we did."
   },
   {
-    question: "\"How do you ensure the leads are actually high-quality?\"",
-    answer: "We source leads with extreme precision by layering intent signals (such as recent hiring trends, funding rounds, or specific technology stacks) with your custom ICP filters. Most importantly, you maintain total control: you approve every lead list before we begin sending, ensuring 100% alignment with your brand standards."
+    question: "What if I'm not a video production agency?",
+    answer: "We work with any content production agency — UGC studios, social media content shops, podcast production, content repurposing, short-form video. If brands pay you to create content, we can find brands that need you."
   },
   {
-    question: "\"What kind of visibility do I have into the process?\"",
-    answer: "Transparency is built into our process. You will have full visibility into the lead sourcing, the specific research angles being used, and real-time metrics like reply rates and responses."
+    question: "What does the full outreach service cost?",
+    answer: "The brand list is free. If you want us to handle the full outreach — personalized messages, follow-ups, meeting booking — that starts at $2,500/month. But there's zero pressure. Most people start with the free list and decide from there."
   },
   {
-    question: "\"Do I need to commit to a long-term contract?\"",
-    answer: "No. We start with the 30-Day Offer Testing Sprint. During this time, we set up your entire infrastructure, test multiple messaging angles, and refine your lead-tiering logic. At the end of the sprint, we analyze the data together to ensure the system is delivering results before we decide to scale the partnership long-term."
+    question: "How fast will I see results?",
+    answer: "The brand list is delivered within 48 hours of our first call. If you opt into the full outreach service, most agencies see their first meeting booked within 2-3 weeks of launching."
   }
 ];
 
@@ -33,7 +33,6 @@ export const FAQSection: React.FC = () => {
 
   return (
     <section id="faq" className="relative py-24 border-t border-white/5">
-      {/* Background Decor */}
       <div className="absolute left-0 bottom-0 w-[400px] h-[400px] bg-primary/5 rounded-full mix-blend-screen filter blur-[100px] pointer-events-none"></div>
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -42,7 +41,7 @@ export const FAQSection: React.FC = () => {
             Questions You <span className="gold-text-gradient">Might Have</span>
           </h2>
           <p className="text-gray-400 text-lg font-light">
-            Everything you need to know about The 30-Day Offer Testing Sprint.
+            Everything you need to know before booking your call.
           </p>
         </div>
 

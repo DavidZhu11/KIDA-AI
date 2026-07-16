@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './ui/Button';
-import { PhoneCall } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 export const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -14,8 +14,7 @@ export const Header: React.FC = () => {
   }, []);
 
   const navItems = [
-    { name: 'Solution', id: 'solution' },
-    { name: 'Process', id: 'process' },
+    { name: 'How It Works', id: 'process' },
     { name: 'Results', id: 'results' },
     { name: 'FAQ', id: 'faq' },
   ];
@@ -29,7 +28,7 @@ export const Header: React.FC = () => {
   };
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-background-dark/90 backdrop-blur-md shadow-lg shadow-black/20 py-3' : 'bg-transparent py-5'}`} aria-label="Main navigation">
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-background-dark/90 backdrop-blur-md shadow-lg shadow-black/20 py-3' : 'bg-transparent py-5'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-2 group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
@@ -40,14 +39,13 @@ export const Header: React.FC = () => {
             />
           </div>
 
-          <div className="hidden md:flex items-center space-x-8" role="navigation" aria-label="Primary navigation">
+          <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={`#${item.id}`}
                 onClick={(e) => scrollToSection(e, item.id)}
                 className="text-sm font-medium text-gray-400 hover:text-white transition-colors relative group"
-                aria-label={`Navigate to ${item.name} section`}
               >
                 {item.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
@@ -59,12 +57,12 @@ export const Header: React.FC = () => {
             <Button
               variant="primary"
               className="!px-6 !py-2 text-sm"
-              icon={<PhoneCall size={16} />}
-              href="https://cal.com/david-zhu/the-market-of-one-strategy-session"
+              icon={<ArrowRight size={16} />}
+              href="https://cal.com/david-zhu/discovery-call"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Book a Strategy Call
+              Get Your Free Brand List
             </Button>
           </div>
         </div>

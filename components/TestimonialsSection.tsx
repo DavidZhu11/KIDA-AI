@@ -1,26 +1,22 @@
 import React from 'react';
 import { SpotlightCard } from './ui/SpotlightCard';
-import { Star, User, Quote, ArrowRight } from 'lucide-react';
-import { Button } from './ui/Button';
+import { Star, User, Quote } from 'lucide-react';
 
 const testimonials = [
   {
     name: "Dona Baker",
     role: "Agency Owner",
     quote: "40% acceptance, 30%+ replies, meeting booked in week 1.",
-    highlight: "Meeting booked in Week 1"
   },
   {
     name: "Landon Steele",
     role: "Growth Director",
     quote: "High-quality, high-impact outreach... it's working.",
-    highlight: "High-Impact Outreach"
   },
   {
-    name: "Domenic Werners",
+    name: "Domenic Werner",
     role: "Founder",
     quote: "Expert in AI automation and bringing clarity to technical setups.",
-    highlight: "Automation Expert"
   }
 ];
 
@@ -32,10 +28,10 @@ export const TestimonialsSection: React.FC = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
           <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6">
-            Trusted by Industry <span className="gold-text-gradient">Leaders</span>
+            Real <span className="gold-text-gradient">Results</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto font-light">
-            Don't just take our word for it. Here is what our partners are achieving.
+            What our clients are seeing from outreach we've built.
           </p>
         </div>
 
@@ -43,19 +39,16 @@ export const TestimonialsSection: React.FC = () => {
           {testimonials.map((item, index) => (
             <SpotlightCard key={index} className="h-full">
               <div className="p-8 h-full flex flex-col relative overflow-hidden group">
-                {/* Decorative Quote Icon */}
                 <div className="absolute top-4 right-4 text-white/5 group-hover:text-primary/10 transition-colors duration-500">
                   <Quote size={80} />
                 </div>
 
-                {/* Stars */}
                 <div className="flex gap-1 mb-6 text-primary">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} size={16} fill="currentColor" />
                   ))}
                 </div>
 
-                {/* Quote */}
                 <p className="text-xl font-medium text-white mb-8 relative z-10 leading-relaxed">
                   "{item.quote}"
                 </p>
