@@ -16,7 +16,7 @@ export const Footer: React.FC = () => {
           </div>
 
           <a
-            href="https://cal.com/david-zhu/discovery-call"
+            href="https://cal.com/david-zhu/quick-chat"
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary hover:text-white transition-colors text-sm font-medium"

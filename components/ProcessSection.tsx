@@ -203,7 +203,7 @@ export const ProcessSection: React.FC = () => {
             <div className="w-full mt-8 group cursor-pointer relative">
               <div className="absolute -top-12 left-1/2 -translate-x-1/2 w-0.5 h-12 bg-gradient-to-b from-transparent to-primary/50"></div>
               <a
-                href="https://cal.com/david-zhu/discovery-call"
+                href="https://cal.com/david-zhu/quick-chat"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gradient-to-br from-primary via-[#C5A028] to-[#B8860B] p-6 rounded-2xl relative flex items-center justify-center gap-4 shadow-[0_0_50px_rgba(212,175,55,0.4)] transform group-hover:scale-[1.02] transition-transform duration-300 border border-white/20 block"

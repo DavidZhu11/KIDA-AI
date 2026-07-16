@@ -51,7 +51,7 @@ export const Hero: React.FC = () => {
             variant="primary"
             icon={<ArrowRight size={18} />}
             className="w-full sm:w-auto"
-            href="https://cal.com/david-zhu/discovery-call"
+            href="https://cal.com/david-zhu/quick-chat"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -58,7 +58,7 @@ export const Header: React.FC = () => {
               variant="primary"
               className="!px-6 !py-2 text-sm"
               icon={<ArrowRight size={16} />}
-              href="https://cal.com/david-zhu/discovery-call"
+              href="https://cal.com/david-zhu/quick-chat"
               target="_blank"
               rel="noopener noreferrer"
             >
